@@ -5,10 +5,7 @@ import {inject} from 'aurelia-framework';
 @inject(AuthorizeStep)
 export class App {
 
-  constructor(authorizestep) {
-  console.log("webbrowser");
-	// console.log("webbrowser"); this.authorizestep = authorizestep;
-  }
+	//deleted piece of code on PC
 
 	configureRouter(config, router) {
 		this.router = router;

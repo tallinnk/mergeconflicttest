@@ -6,7 +6,8 @@ import {inject} from 'aurelia-framework';
 export class App {
 
   constructor(authorizestep) {
-	  this.authorizestep = authorizestep;
+  console.log("webbrowser");
+	// console.log("webbrowser"); this.authorizestep = authorizestep;
   }
 
 	configureRouter(config, router) {
@@ -14,6 +15,7 @@ export class App {
 		config.title = 'BookMarket';
 		config.addPipelineStep('authorize', this.authorizestep);
 		config.map([
+		  console.log("webbrowser");
 			{ route: [''], name: 'home', moduleId: 'home/index', nav: true, title: 'Home' , settings: { roles: [''] }},
 			{ route: 'books', name: 'books', moduleId: 'books/books', nav: true, title: 'All Books' , settings: { roles: [''] }},
 			{ route: 'books/:id', name: 'bookbyid', moduleId: 'book/book', nav: false, title: 'Book' , settings: { roles: [''] }},
